@@ -9,7 +9,7 @@
     --text-muted-custom: #94a3b8;
 }
 
-/* Memaksa background & warna teks secara global */
+/* html and body styles */
 html, body {
     background-color: #0e1017 !important;
     color: #94a3b8 !important;
@@ -18,14 +18,14 @@ html, body {
     padding: 0;
 }
 
-/* Navbar Custom */
+/* Navbar */
 .navbar-custom {
     background-color: rgba(14, 16, 23, 0.9) !important;
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Typography Custom */
+/* Typography */
 .hero-title {
     font-size: 3.5rem;
     font-weight: 800;
