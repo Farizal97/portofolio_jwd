@@ -32,7 +32,7 @@ $query_kategori = mysqli_query($koneksi, "SELECT * FROM tb_kategori_keahlian ORD
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= htmlspecialchars($profil['nama'] ?? 'Farizal'); ?> - Portofolio</title>
+    <title><?= htmlspecialchars($profil['nama'] ?? 'Farizal Hendra Putra Kusuma'); ?> - Portofolio</title>
     
     <!-- Bootstrap 5 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -326,7 +326,7 @@ $query_kategori = mysqli_query($koneksi, "SELECT * FROM tb_kategori_keahlian ORD
                             </span>
                         </div>
 
-                        <p class="text-secondary mb-2" style="font-size: 0.95rem;">Halo, saya <?= explode(' ', trim($profil['nama'] ?? 'Farizal'))[0]; ?>.</p>
+                        <p class="text-secondary mb-2" style="font-size: 0.95rem;">Halo, saya <?= explode(' ', trim($profil['nama'] ?? 'Farizal Hendra Putra Kusuma'))[0]; ?>.</p>
                         <h1 class="hero-title mb-4">
                             Saya merancang <br>
                             <span class="text-orange">pengalaman digital.</span>
@@ -375,7 +375,7 @@ $query_kategori = mysqli_query($koneksi, "SELECT * FROM tb_kategori_keahlian ORD
                                             FK
                                         </div>
                                         <div>
-                                            <h6 class="text-white mb-0 fw-bold" style="font-size: 0.85rem;"><?= htmlspecialchars($profil['nama'] ?? 'Farizal'); ?></h6>
+                                            <h6 class="text-white mb-0 fw-bold" style="font-size: 0.85rem;"><?= htmlspecialchars($profil['nama'] ?? 'Farizal Hendra Putra Kusuma'); ?></h6>
                                             <small class="text-secondary" style="font-size: 0.72rem;"><?= htmlspecialchars($profil['sub_role'] ?? 'Web Developer & UI/UX Designer'); ?></small>
                                         </div>
                                     </div>
