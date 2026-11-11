@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- cspell:disable -->
+<html lang="id" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Farizal Hendra Putra Kusuma</title>
+    <!-- Pastikan path file CSS di bawah ini sudah sesuai dengan folder Anda -->
+    <link rel="stylesheet" href="asssets/css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR RESPONSIVE -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="index.html">FHPK.Dev</a>
+            
+            <div class="nav-right-group">
+                <!-- Tombol Ganti Tema (Dark/Light) -->
+                <button class="theme-toggle-btn" id="themeToggleButton" type="button" aria-label="Aktifkan tema terang" title="Ganti tema">
+                    <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+                    </svg>
+                    <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"></path>
+                    </svg>
+                </button>
+                
+                <!-- Hamburger Menu untuk Layar Handphone -->
+                <button class="navbar-toggler" type="button" id="hamburgerButton" aria-label="Buka navigasi" aria-controls="navbarNav" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <nav class="navbar-collapse" id="navbarNav" aria-label="Navigasi utama">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link" href="#profil">Tentang Saya</a></li>
+                    <li><a class="nav-link" href="#keahlian">Keahlian</a></li>
+                    <li><a class="nav-link" href="#media">Portofolio Proyek</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT (Sistem Grid) -->
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                
+                <!-- KARTU 1: Tentang Saya (Profil Profesional) -->
+                <section id="profil" class="card mb-4" aria-labelledby="profile-title">
+                    <div class="card-body">
+                        <div class="profile-flex">
+                            <div class="profile-photo-container">
+                                <div class="profile-placeholder-circle">Foto Profil</div>
+                            </div>
+                            <div class="profile-text-content">
+                                <h1 id="profile-title" class="profile-main-title">Farizal Hendra Putra Kusuma</h1>
+                                <p class="profile-sub-role">Junior Web Developer | Quality Assurance | UI UX Designer</p>
+                                <div class="border-top-divider"></div>
+                                <h2>Tentang Saya</h2>
+                                <p class="profile-summary">
+                                    Lulusan D3 Sistem Informasi yang saat ini aktif melanjutkan studi di Universitas Terbuka dan bersiap transisi ke Universitas Nusa Mandiri. Saya adalah seorang Web Developer yang berdedikasi tinggi, dengan fokus utama pada efisiensi penulisan kode serta pengembangan antarmuka web yang responsif.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- KARTU 2: Keahlian Utama -->
+                <section id="keahlian" class="card mb-4" aria-labelledby="skills-title">
+                    <div class="card-body">
+                        <h2 id="skills-title">Keahlian Utama</h2>
+                        <div class="tech-grid">
+                            <div class="tech-column">
+                                <h3>Web Development</h3>
+                                <div class="badge-group">
+                                    <span class="badge badge-blue">HTML5</span>
+                                    <span class="badge badge-blue">CSS3</span>
+                                    <span class="badge badge-blue">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="tech-column">
+                                <h3>UI/UX Design</h3>
+                                <div class="badge-group">
+                                    <span class="badge badge-gray">Wireframing</span>
+                                    <span class="badge badge-gray">Figma</span>
+                                </div>
+                            </div>
+                            <div class="tech-column">
+                                <h3>Quality Assurance</h3>
+                                <div class="badge-group">
+                                    <span class="badge badge-dark">Manual Testing</span>
+                                    <span class="badge badge-dark">Bug Tracking</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- KARTU 3: Kredensial & Media Profil -->
+                <section id="media" class="card mb-4" aria-labelledby="social-title">
+                    <div class="card-body">
+                        <h2 id="social-title">Portofolio Proyek</h2>
+                        <div class="social-btn-group">
+                            <a href="#" target="_blank" class="social-link-item">Profil LinkedIn</a>
+                            <a href="https://github.com/farizal97" target="_blank" rel="noopener noreferrer" class="social-link-item">Repositori GitHub</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FOOTER -->
+                <footer class="text-center small mt-5">
+                    <p>&copy; 2026 Farizal Hendra Putra Kusuma. Latihan JWD BBPVP Bekasi.</p>
+                </footer>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Pastikan path file JS di bawah ini sudah sesuai dengan folder Anda -->
+    <script src="asssets/js/script.js"></script>
+</body>
+</html>
