@@ -44,7 +44,7 @@ $query_kategori = mysqli_query($koneksi, "SELECT * FROM tb_kategori_keahlian ORD
         
         :root {
             --bg-dark: #090a0f;
-            --bg-card: #11141c;
+            --bg-https://github.com/Farizal97/portofolio_jwd/tree/portofoliocard: #11141c;
             --border-card: #1e2330;
             --accent-orange: #ff5e28;
             --accent-orange-hover: #e04e1b;
