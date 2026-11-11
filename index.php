@@ -326,7 +326,7 @@ $query_kategori = mysqli_query($koneksi, "SELECT * FROM tb_kategori_keahlian ORD
                             </span>
                         </div>
 
-                        <p class="text-secondary mb-2" style="font-size: 0.95rem;">Halo, saya <?= explode(' ', trim($profil['nama'] ?? 'Farizal Hendra Putra Kusuma'))[0]; ?>.</p>
+                        <p class="text-secondary mb-2" style="font-size: 0.95rem;">Halo, saya <?= htmlspecialchars($profil['nama'] ?? 'Farizal Hendra Putra Kusuma'); ?>.</p>
                         <h1 class="hero-title mb-4">
                             Saya merancang <br>
                             <span class="text-orange">pengalaman digital.</span>
@@ -554,7 +554,7 @@ $query_kategori = mysqli_query($koneksi, "SELECT * FROM tb_kategori_keahlian ORD
     <!-- FOOTER -->
     <footer class="py-4 border-top border-secondary border-opacity-25">
         <div class="container d-flex flex-column flex-sm-row align-items-center justify-between text-secondary" style="max-width: 1100px; font-size: 0.75rem;">
-            <p class="mb-2 mb-sm-0">&copy; <?= date('Y'); ?> <?= htmlspecialchars($profil['nama'] ?? 'Farizal'); ?>. All rights reserved.</p>
+            <p class="mb-2 mb-sm-0">&copy; <?= date('Y'); ?> <?= htmlspecialchars($profil['nama'] ?? 'Farizal Hendra Putra Kusuma'); ?>. All rights reserved.</p>
             <p class="mb-0">Designed & Built with</p>
         </div>
     </footer>
